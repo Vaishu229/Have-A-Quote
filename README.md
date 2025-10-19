@@ -40,4 +40,4 @@ Run `npm i` in your terminal.
 
 ## Author
 
-- Website - [Vaishnavi].
+*Vaishnavi.*
