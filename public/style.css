@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    color: black;
+}
+
+nav{
+    background-color: black;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+img{
+    height: 32px;
+    margin-top: 0.63em;
+}
+
+h3{
+    color: wheat;
+    font-size: 1.17em;
+}
+
+main{
+    flex: 1 0 auto; /* allow main to grow and push footer down */
+    max-width: 1100px;
+    width: 90%;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+h1{
+    font-family: "Quintessential", serif;
+    font-size: clamp(1.8rem, 4.5vw + 1rem, 4.5rem);
+    line-height: 1.05;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+}
+
+#author{
+    align-self: flex-end;
+    font-family: "Delius Swash Caps", cursive;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 2.5rem);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+footer{
+    /* sticky footer: stays at bottom because body is column flex and main grows */
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding-inline: 0.5rem;
+    font-size: 1.17em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(187, 174, 150);
+}
+
+img{
+    height: 32px;
+    margin-top: 0.25rem;
+}
+
+a{
+    color: wheat;
+    text-decoration: none;
+}
+
+@media (min-width: 900px){
+    main{width: 70%;}
+    h1{font-size: 4.5rem}
+}
+
+@media (max-width: 600px){
+    nav{padding: 0.5rem;}
+    h3{font-size: 1rem}
+    main{margin: 1.5rem 1rem}
+    #author{align-self: center}
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Have A Quote</title>
+	<link rel="icon" href="./images/icon.png">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="./images/icon.png" alt="Quotation marks">
+        <a href="https://www.quotes.net/" target="_blank"><h3>Have A Quote</h3></a>
+    </nav>
+	<main>
+		<h1>" <%= content_quote %> "</h1>
+		<p id="author">- <%= content_author %></p>
+	</main>
+	<footer>
+		<p>© <%= year %></p>
+		<p> Made by Vaishnavi</p>
+		<a href="https://www.flaticon.com/free-icons/quote" target="_blank" title="quote icons">Quote icon by Xinh Studio</a>	
+	</footer>
+</body>
+</html>
